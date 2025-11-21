@@ -98,7 +98,7 @@ jobs:
           echo "kubectl returned $?"
           kubectl -n default get pod
           sleep 10
-    integration-testing:
+    integration-test:
       uses: ./.github/workflows/reusable-workflow.yml
       needs: dev-deploy
       with:
